@@ -73,16 +73,16 @@ html {
 
 
 
-.debug main {
+/* .debug main {
     background-color: rgba(255, 255, 255, 0.6);
-}
+} */
 
 /* .debug .content {
     background-color: #141922;
 }
  */
 .debug .top-bar {
-    background-color: rgba(8, 11, 18, 0.6);
+    /* background-color: rgba(8, 11, 18, 0.6); */
 }
 
 .content ul {
@@ -158,6 +158,7 @@ footer {
 }
 
 .top-bar {
+    background-color: rgba(8, 11, 18, 0.6);
     width: calc(100% - 50px);
     height: 70px;
     position: fixed;
