@@ -129,6 +129,12 @@ html {
 .debug .footer-tools {
     background-color: crimson;
 }
+
+.debug .disco-music {
+    background-color: aquamarine;
+}
+
+
 /* UTILITY */
 
 
@@ -155,6 +161,7 @@ footer {
     align-items: center;
 
 }
+
 .footer-tools {
     width: calc(100% / 3 - 10px);
     /* margin: 0 10px; */
@@ -162,7 +169,7 @@ footer {
 
 main {
     height: calc(100vh - 100px);
-    overflow-y:scroll;
+    overflow-y: scroll;
 }
 
 #sidebar {
@@ -207,4 +214,9 @@ main {
     position: fixed;
     right: 0%;
     top: 15px;
+}
+
+.disco-music {
+    width: calc(50% - 20px);
+    margin: 10px;
 }
