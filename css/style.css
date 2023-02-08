@@ -148,7 +148,7 @@ main {
 #sidebar {
     width: 50px;
     background-color: black;
-
+    color: #6F6F6F
 }
 
 .content {
@@ -208,7 +208,17 @@ main {
 
 #sidebar img {
     max-height: 30px;
-    margin: 5px;
+    margin: 5px 0;
+}
+
+.add-playlist {
+    padding: 5px 0;
+}
+
+.side-list ul li {
+    list-style: none;
+    text-align: left;
+    padding: 5px 0;
 }
 
 
@@ -217,7 +227,7 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     height: 100%;
 
     /* height: calc(100vh - 100px); */
@@ -227,14 +237,11 @@ main {
 
     #sidebar {
         width: 200px;
-        background-color: rgb(255, 0, 0);
+        background-color: black;
+        padding: 10px;
 
     }
 
-    .img-bottom {
-        background-color: rgb(255, 0, 0);
-
-    }
 
     .sidebar-menu {
         display: flex;
@@ -243,14 +250,13 @@ main {
     }
 
     .img-bottom {
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: center;
-        background-color: rgb(255, 0, 0);
-        height: 100%;
+        /* background-color: black; */
+        margin: 0 -10px;
     }
 
-
+    #img1 {
+        /* background-color: black; */
+    }
 
 
     .top-bar {
@@ -268,3 +274,15 @@ main {
 
 
 }
+
+@media screen and (min-width: 768px) {
+
+    .disco-music {
+        width: calc(25% - 20px);
+        margin: 10px;
+    }
+    
+
+
+}
+
