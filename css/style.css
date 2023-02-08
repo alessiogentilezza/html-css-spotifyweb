@@ -243,6 +243,14 @@ footer {
 
     }
 
+    .content {
+        width: calc(100% - 200px);
+    }
+
+    .top-bar {
+        width: calc(100% - 200px);
+    }
+
 
     .sidebar-menu {
         display: flex;
@@ -258,12 +266,6 @@ footer {
     #img1 {
         /* background-color: black; */
     }
-
-
-    .top-bar {
-        width: calc(100% - 200px);
-    }
-
 
     .dsp-none {
         display: flex;
@@ -284,6 +286,14 @@ footer {
     }
 
 
-
 }
 
+@media screen and (min-width: 992px) {
+
+    .disco-music {
+        width: calc(100% / 6 - 20px);
+        margin: 10px;
+    }
+
+
+}
