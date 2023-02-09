@@ -23,9 +23,15 @@ html {
     flex-wrap: wrap;
 }
 
-.space-between {
+.s-bet {
     justify-content: space-between;
 }
+
+.s-aro {
+    justify-content: space-around;
+
+}
+
 
 .jc-center {
     justify-content: center;
@@ -37,9 +43,9 @@ html {
 
 
 
-.debug .footer-tools {
+/* .debug .footer-tools {
     background-color: crimson;
-}
+} */
 
 /* .debug .sidebar-nav {
     background-color: #8ca8f0;
@@ -90,19 +96,104 @@ html {
 
 footer {
     width: 100%;
-    height: 100px;
+    height: 70px;
     background-color: #282828;
     justify-content: space-between;
     align-items: center;
 }
 
 .footer-tools {
-    width: calc(100% / 3 - 10px);
-    /* margin: 0 10px; */
+    height: 100%;
+    color: #4C4C4C;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+
 }
 
+.footer-tools i {
+    padding: 0 5px;
+}
+
+
+.footer-tools.left {
+    min-width: 200px;
+
+}
+
+.footer-tools.center {
+    max-width: calc(100% - 400px);
+
+}
+
+.footer-tools.right {
+    min-width: 200px;
+
+}
+
+.footer-tools .left-a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+.footer-tools .left-a img {
+    height: 30px;
+    margin: 0 10px;
+
+}
+
+
+.footer-tools .right .progress-bar {
+    height: 5px;
+    width: 100px;
+    background-color: #4C4C4C;
+    /* border-radius: 10px; */
+  }
+  
+.footer-tools .right .progress-bar-fill {
+    height: 100%;
+    width: 30%;
+    background-color: #C1C1C1;
+    /* border-radius: 10px; */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 main {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 70px);
     overflow: hidden;
 
 }
