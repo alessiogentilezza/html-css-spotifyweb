@@ -44,9 +44,15 @@ html {
 .debug .sidebar-nav {
     background-color: #8ca8f0;
 }
+
 .debug .sidebar-playlist {
     background-color: cadetblue;
 }
+
+.debug .sidebar-playlist ul{
+    background-color: green;
+}
+
 /* UTILITY */
 
 
@@ -120,6 +126,9 @@ main {
     /* color: #6E6E6E; */
     text-align: center;
     /* padding: 10px; */
+    min-height: 350px;
+    overflow-y: hidden;
+
 }
 
 #sidebar img {
@@ -130,20 +139,40 @@ main {
 .sidebar-top {
     height: calc(100% - 100px);
     background-color: rgb(219, 94, 17);
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+
 }
+
 .sidebar-bottom {
     height: 100px;
     background-color: rgb(96, 192, 157);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
-
-
 
 .add-playlist {
     padding: 5px 0;
 }
 
-.side-list ul li {
+
+
+.sidebar-playlist {
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.sidebar-playlist ul {
+    overflow-y: auto;
+
+}
+
+.sidebar-playlist ul li {
     list-style: none;
     text-align: left;
     padding: 5px 0;
@@ -153,10 +182,9 @@ main {
 
 .content {
     width: calc(100% - 50px);
-    overflow-y:hidden;
+    overflow-y: hidden;
     background-color: #141922;
     padding: 0 10px
-
 }
 
 .content ul {
@@ -206,7 +234,7 @@ main {
     height: calc(100vh - 100px);
 } */
 
-.d-flex .up,
+/* .d-flex .up,
 .d-flex .down {
     align-items: center;
 }
@@ -216,9 +244,9 @@ main {
     bottom: 40px;
     left: 0px;
     width: 100%;
-    /* border-bottom: 1px solid #808080;
-    padding-bottom: 5px; */
-    /* text-decoration: underline; */
+    border-bottom: 1px solid #808080;
+    padding-bottom: 5px;
+    text-decoration: underline;
 
 }
 
@@ -236,7 +264,7 @@ main {
     left: 0px;
     width: 100%;
 
-}
+} */
 
 #img1 {
     height: 20px;
@@ -267,14 +295,15 @@ main {
     }
 
 
-    .side-flex{
+    .side-flex {
         display: flex;
         align-items: center;
 
     }
 
     .dsp-none {
-        display: flex;
+        display: block;
+        text-align: left;
     }
 
     .dsp-block {
