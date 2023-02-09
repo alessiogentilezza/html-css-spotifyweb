@@ -35,22 +35,18 @@ html {
     align-items: center;
 }
 
-.debug .top-bar {
-    /* background-color: rgba(8, 11, 18, 0.6); */
-}
 
-.content ul {
-    /* background-color: cadetblue; */
-}
 
 .debug .footer-tools {
     background-color: crimson;
 }
 
-.debug .disco-music {
-    /* background-color: aquamarine; */
+.debug .sidebar-nav {
+    background-color: #8ca8f0;
 }
-
+.debug .sidebar-playlist {
+    background-color: cadetblue;
+}
 /* UTILITY */
 
 
@@ -120,16 +116,28 @@ main {
 
 #sidebar {
     width: 50px;
-    background-color: black;
-    color: #6E6E6E;
+    /* background-color: black; */
+    /* color: #6E6E6E; */
     text-align: center;
-    position: relative;
+    /* padding: 10px; */
 }
 
 #sidebar img {
     max-height: 30px;
     margin: 5px 0;
 }
+
+.sidebar-top {
+    height: calc(100% - 100px);
+    background-color: rgb(219, 94, 17);
+}
+.sidebar-bottom {
+    height: 100px;
+    background-color: rgb(96, 192, 157);
+}
+
+
+
 
 .add-playlist {
     padding: 5px 0;
@@ -145,7 +153,7 @@ main {
 
 .content {
     width: calc(100% - 50px);
-    overflow-y:scroll;
+    overflow-y:hidden;
     background-color: #141922;
     padding: 0 10px
 
@@ -248,8 +256,6 @@ main {
 
     #sidebar {
         width: 200px;
-        padding: 10px;
-
     }
 
     .content {
@@ -261,7 +267,7 @@ main {
     }
 
 
-    .sidebar-menu {
+    .side-flex{
         display: flex;
         align-items: center;
 
