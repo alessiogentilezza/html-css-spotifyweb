@@ -11,9 +11,9 @@ html {
 
 /* REGOLE DI DEBUG */
 
-.border {
+/* .border {
     border: 1px dashed red;
-}
+} */
 
 .d-flex {
     display: flex;
@@ -32,7 +32,6 @@ html {
 
 }
 
-
 .jc-center {
     justify-content: center;
 }
@@ -41,23 +40,6 @@ html {
     align-items: center;
 }
 
-
-
-/* .debug .footer-tools {
-    background-color: crimson;
-} */
-
-/* .debug .sidebar-nav {
-    background-color: #8ca8f0;
-}
-
-.debug .sidebar-playlist {
-    background-color: cadetblue;
-}
-
-.debug .sidebar-playlist ul {
-    background-color: green;
-} */
 
 /* UTILITY */
 
@@ -108,7 +90,7 @@ footer {
     display: flex;
     align-items: center;
     font-size: 12px;
-    /* width: calc(100% / 3); */
+    width: calc(100% / 3);
 
 
 
@@ -156,11 +138,15 @@ footer {
   justify-content: center;
   }
 
+
 .footer-tools.center .progress-bar {
+    margin: 10px 0;
     height: 5px;
-    width: 100px;
+    width: 80%;
     background-color: #4C4C4C;
     border-radius: 10px;
+
+
   }
   
 .footer-tools.center .progress-bar-fill {
@@ -168,13 +154,8 @@ footer {
     width: 30%;
     background-color: #C1C1C1;
     border-radius: 10px;
+
   }
-
-
-
-
-
-
 
   .footer-tools.right .progress-bar {
     height: 5px;
@@ -191,45 +172,11 @@ footer {
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 main {
     height: calc(100vh - 70px);
     overflow: hidden;
 
 }
-
 
 .top-bar {
     background-color: rgba(8, 11, 18, 0.7);
@@ -245,8 +192,8 @@ main {
 #sidebar {
     width: 50px;
     background-color: black;
-    /* color: #6E6E6E; */
-    color: red;
+    color: #6E6E6E;
+    /* color: red; */
     text-align: center;
     min-height: 350px;
     overflow-y: hidden;
@@ -404,10 +351,10 @@ main {
     
     }
     
-    .footer-tools.center {
-        max-width: calc(100% - 400px);
+    /* .footer-tools.center {
+      max-width: calc(100% - 400px);
     
-    }
+    } */
     
     .footer-tools.right {
         width: 200px;
