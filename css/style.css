@@ -139,13 +139,26 @@ footer {
 }
 
 
+.container-flex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-flex span {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+
 .footer-tools.center .progress-bar {
     margin: 10px 0;
     height: 5px;
-    width: 80%;
+    width: 50%;
     background-color: #4C4C4C;
     border-radius: 10px;
-
+    overflow: hidden;
 
 
 }
@@ -155,7 +168,6 @@ footer {
     width: 30%;
     background-color: #C1C1C1;
     border-radius: 10px;
-    display: inline-block;
 
 }
 
@@ -164,6 +176,7 @@ footer {
     width: 50%;
     background-color: #4C4C4C;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .footer-tools.right .progress-bar-fill {
