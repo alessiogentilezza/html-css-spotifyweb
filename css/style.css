@@ -55,6 +55,20 @@ html {
     font-size: 12px;
 }
 
+.over-btn {
+    background-color: rgba(8, 11, 18, 0.6);
+    color: white;
+    border-radius: 30px;
+    border: 1px white solid;
+    padding: 15px 35px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    display: none;
+}
+
+
+
 .dsp-none {
     display: none;
 }
@@ -194,17 +208,6 @@ footer {
     transform: translate(-50%, -50%);
     display: none;
 }
-
-.progress-bar:hover .progress-bar-fill {
-    background-color: #ADFF2F;
-}
-.progress-bar:hover .progress-point {
-    display: block;
-}
-
-
-
-
 
 
 main {
@@ -382,7 +385,6 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    /* height: 97%; */
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -403,6 +405,29 @@ main {
     background-color: #808080;
     padding: 1px;
 }
+
+/* REGOLE DI OVER */
+
+.progress-bar:hover .progress-bar-fill {
+    background-color: #ADFF2F;
+}
+.progress-bar:hover .progress-point {
+    display: block;
+}
+
+.btn:hover {
+    padding: 15px 35px;
+    margin-right: 20px;
+    font-size: 14px;
+} 
+
+.disco-music img {
+    width: 100%;
+    display: block;
+}
+
+
+
 
 @media screen and (min-width: 576px) {
 
