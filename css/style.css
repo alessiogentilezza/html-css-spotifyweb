@@ -80,6 +80,7 @@ html {
 .dsp-none-s {
     display: none;
 }
+
 .dsp-none-disco {
     display: none;
 }
@@ -428,6 +429,7 @@ main {
 .disco-music:hover .dsp-none-s {
     display: block;
 }
+
 .disco-music:hover .dsp-none-lg {
     display: block;
 }
@@ -437,7 +439,29 @@ main {
 }
 
 
+a:hover {
+    color: white;
+}
 
+i:hover {
+    color: white;
+}
+
+ul li a:hover {
+    color: white;
+}
+
+#sidebar li a:hover {
+    color: white;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.fa-regular.fa-circle-play:hover {
+    font-size: 25px;
+}
 
 @media screen and (min-width: 576px) {
 
@@ -481,11 +505,6 @@ main {
         max-width: 200px;
 
     }
-
-    /* .footer-tools.center {
-      max-width: calc(100% - 400px);
-    
-    } */
 
     .footer-tools.right {
         min-width: 200px;
