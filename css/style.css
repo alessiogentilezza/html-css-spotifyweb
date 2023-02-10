@@ -80,6 +80,9 @@ html {
 .dsp-none-s {
     display: none;
 }
+.dsp-none-disco {
+    display: none;
+}
 
 .dsp-block {
     display: block;
@@ -411,6 +414,7 @@ main {
 .progress-bar:hover .progress-bar-fill {
     background-color: #ADFF2F;
 }
+
 .progress-bar:hover .progress-point {
     display: block;
 }
@@ -419,10 +423,16 @@ main {
     padding: 15px 35px;
     margin-right: 20px;
     font-size: 14px;
-} 
+}
 
-.disco-music img {
-    width: 100%;
+.disco-music:hover .dsp-none-s {
+    display: block;
+}
+.disco-music:hover .dsp-none-lg {
+    display: block;
+}
+
+.disco-music:hover .dsp-none-disco {
     display: block;
 }
 
