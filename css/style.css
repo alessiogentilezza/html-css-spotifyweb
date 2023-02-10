@@ -59,6 +59,10 @@ html {
     display: none;
 }
 
+.dsp-none-lg {
+    display: none;
+}
+
 .dsp-block {
     display: block;
 }
@@ -270,8 +274,8 @@ main {
 
 #sidebar a {
     text-decoration: none;
-    /* color: #6E6E6E; */
 }
+
 #sidebar li a {
     color: #6E6E6E;
 }
@@ -311,11 +315,11 @@ main {
 }
 
 .border-l {
-	position: absolute;
-	left: 0;
-	top: 0;
-	border-left: #ADFF2F 2px solid;
-	height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-left: #ADFF2F 2px solid;
+    height: 100%;
 }
 
 
@@ -332,11 +336,42 @@ main {
     margin: 10px;
     text-align: center;
     color: white;
+
 }
 
 .disco-music img {
     width: 100%;
+    display: block;
 }
+
+.wrapper {
+    position: relative;
+
+}
+
+.wrapper i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    z-index: 5;
+    
+
+
+}
+
+.over-lay {
+    position: absolute;
+    top: 0;
+    left: 0;    
+    /* height: 97%; */
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6); 
+    z-index: 2;
+}
+
 
 #img1 {
     height: 20px;
@@ -421,6 +456,10 @@ main {
     .disco-music {
         width: calc(100% / 6 - 20px);
         margin: 10px;
+    }
+
+    .dsp-none-lg {
+        display: block;
     }
 
 }
