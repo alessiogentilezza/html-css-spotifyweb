@@ -63,6 +63,10 @@ html {
     display: none;
 }
 
+.dsp-none-s {
+    display: none;
+}
+
 .dsp-block {
     display: block;
 }
@@ -415,6 +419,11 @@ main {
         text-align: left;
     }
 
+    .dsp-none-s {
+        display: block;
+    }
+
+
     .dsp-block {
         display: none;
     }
@@ -422,8 +431,6 @@ main {
     .footer-tools.left {
         min-width: 200px;
         max-width: 200px;
-        /* min-width: 200px;
-        flex-grow: 1; */
 
     }
 
@@ -435,8 +442,6 @@ main {
     .footer-tools.right {
         min-width: 200px;
         max-width: 200px;
-        /* min-width: 200px;
-        flex-grow: 1; */
     }
 
 
@@ -448,6 +453,11 @@ main {
         width: calc(25% - 20px);
         margin: 10px;
     }
+
+    .dsp-none-s {
+        display: none;
+    }
+
 
 }
 
