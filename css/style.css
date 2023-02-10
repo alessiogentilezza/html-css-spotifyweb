@@ -11,9 +11,9 @@ html {
 
 /* REGOLE DI DEBUG */
 
-/* .border {
+.border {
     border: 1px dashed red;
-} */
+}
 
 .d-flex {
     display: flex;
@@ -49,8 +49,10 @@ html {
     color: white;
     border-radius: 30px;
     border: 1px white solid;
-    padding: 10px;
+    padding: 10px 30px;
+    margin-right: 20px;
     text-decoration: none;
+    font-size: 12px;
 }
 
 .dsp-none {
@@ -74,6 +76,10 @@ html {
     margin-left: 10px;
 }
 
+
+
+
+
 /* REGOLE CSS */
 
 footer {
@@ -86,36 +92,33 @@ footer {
 
 .footer-tools {
     height: 100%;
-    color: #4C4C4C;
     display: flex;
     align-items: center;
     font-size: 12px;
-    width: calc(100% / 3);
-
-
-
+    /* width: calc(100% / 3); */
 }
 
 .footer-tools i {
+    font-size: 16px;
     padding: 0 5px;
 }
 
 
 .footer-tools.left {
     max-width: 20%;
-
+    color: #4C4C4C;
 
 }
 
 .footer-tools.center {
-    max-width: 40%;
-
+    width: 40%;
+    color: white;
 
 }
 
 .footer-tools.right {
     max-width: 20%;
-
+    color: white;
 }
 
 .footer-tools .left-a {
@@ -267,6 +270,9 @@ main {
 
 #sidebar a {
     text-decoration: none;
+    /* color: #6E6E6E; */
+}
+#sidebar li a {
     color: #6E6E6E;
 }
 
@@ -276,11 +282,12 @@ main {
     width: calc(100% - 50px);
     overflow-y: auto;
     background-color: #141922;
-    padding: 0 10px
+    padding: 0 10px;
 }
 
 .content ul {
     margin-top: 80px;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -297,9 +304,19 @@ main {
 }
 
 .border-b {
-    border-bottom: green 1px solid;
+    border-bottom: #ADFF2F 2px solid;
+    width: 40%;
+    position: relative;
+    left: 30%;
 }
 
+.border-l {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-left: #ADFF2F 2px solid;
+	height: 100%;
+}
 
 
 
@@ -340,7 +357,6 @@ main {
     #sidebar {
         width: 200px;
         padding: 10px;
-
     }
 
     .content {
@@ -355,6 +371,7 @@ main {
     .side-flex {
         display: flex;
         align-items: center;
+        position: relative;
 
     }
 
@@ -370,6 +387,8 @@ main {
     .footer-tools.left {
         min-width: 200px;
         max-width: 200px;
+        /* min-width: 200px;
+        flex-grow: 1; */
 
     }
 
@@ -379,10 +398,10 @@ main {
     } */
 
     .footer-tools.right {
-        width: 200px;
+        min-width: 200px;
         max-width: 200px;
-
-
+        /* min-width: 200px;
+        flex-grow: 1; */
     }
 
 
@@ -394,7 +413,6 @@ main {
         width: calc(25% - 20px);
         margin: 10px;
     }
-
 
 }
 
