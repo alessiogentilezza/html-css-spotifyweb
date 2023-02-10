@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotifyweb</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="debug">
+    <main class="d-flex">
+
+        <div class="top-bar">
+            <div class="position-btn">
+                <a class="btn" href="#">EFFETTUA L'UPGRADE</a>
+            </div>
+
+        </div>
+
+        <aside id="sidebar">
+
+            <section class="sidebar-top">
+
+                <div class="logo">
+                    <div class="side-flex dsp-block"> <img src="img/logo-small.svg" alt=""></div>
+                    <div class="side-flex dsp-none"> <img src="img/logo.svg" alt=""></div>
+
+                </div>
+
+                <div class="sidebar-nav">
+                    <div class="side-flex">
+                        <div class="border-l dsp-none"></div>
+                        <img src="img/home.svg" alt=""><a class="dsp-none text-white" href="#">Home</a>
+                    </div>
+                    <div class="side-flex"><img src="img/search.svg" alt=""><a class="dsp-none text-gray"
+                            href="#">Search</a>
+                    </div>
+                    <div class="side-flex"><img src="img/libreria.svg" alt=""><a class="dsp-none text-gray"
+                            href="#">Library</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-playlist">
+                    <h5 class="dsp-none text-white">PLAYLIST</h5>
+                    <span class="add-playlist dsp-none"><i class="fa-regular fa-square-plus"></i><a class="text-gray"
+                            href="#"> Crea
+                            Playlist</a>
+                    </span>
+                    <ul class="list dsp-none">
+                        <li><a href="#">Playlist 1</a></li>
+                        <li><a href="#">Playlist 2</a></li>
+                        <li><a href="#">Playlist 3</a></li>
+                        <li><a href="#">Playlist 4</a></li>
+                        <li><a href="#">Playlist 5</a></li>
+                        <li><a href="#">Playlist 6</a></li>
+                        <li><a href="#">Playlist 7</a></li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="sidebar-bottom">
+                <div class="side-flex bottom-first text-gray"><img id="img1" src="img/download.svg" alt=""><a
+                        class="dsp-none text-gray" href="#">Installa app</a></div>
+                <hr class="dsp-none hr-space text-gray">
+                <div class="side-flex bottom-second"><img id="img2" src="img/profile.svg" alt=""><span
+                        class="dsp-none text-white"><strong>Jonh Doe</strong></span></div>
+            </section>
+
+        </aside>
+
+        <div class="content">
+            <nav>
+                <ul>
+                    <li><a href="#">IN EVIDENZA</a>
+                        <div class="border-b"></div>
+                    </li>
+                    <li><a href="#">PODCAST</a></li>
+                    <li><a href="#">CLASSIFICHE</a></li>
+                    <li><a href="#">GENERI E MOOD</a></li>
+                    <li><a href="#">NUOVE USCITE</a></li>
+                    <li><a href="#">SCOPRI</a></li>
+                </ul>
+            </nav>
+
+            <h2 class="text-white ml-10">Recently Played</h2>
+            <div class="play-list d-flex wrap">
+                <div class="disco-music">
+                    <div class="wrapper">
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <div class="over-lay dsp-none-s">
+                            <i class="fa-regular fa-circle-play text-white"></i>
+                        </div>
+                    </div>
+                    <h3>Heavy Metal</h3>
+                    <h5>Subtitle</h5>
+                </div>
+                <div class="disco-music">
+                    <div class="wrapper">
+                        <img src="img/stranger.jpeg" alt="">
+                        <div class="over-lay dsp-none-disco">
+                            <i class="fa-regular fa-circle-play text-white"></i>
+                        </div>
+                    </div>
+                    <h3>Strangers Things, Vol.1</h3>
+                    <h5>Subtitle</h5>
+                </div>
+                <div class="disco-music">
+                    <div class="wrapper">
+                        <img src="img/aquietplace.jpeg" alt="">
+                        <div class="over-lay dsp-none-lg">
+                            <i class="fa-regular fa-circle-play text-white"></i>
+                        </div>
+                    </div>
+                    <h3>A queit place</h3>
+                    <h5>Subtitle</h5>
+                </div>
+                <div class="disco-music">
+                    <div class="wrapper">
+                        <img src="img/split.jpeg" alt="">
+                        <div class="over-lay dsp-none-disco">
+                            <i class="fa-regular fa-circle-play text-white"></i>
+                        </div>
+                    </div>
+                    <h3>Split</h3>
+                    <h5>Subtitle</h5>
+                </div>
+                <div class="disco-music">
+                    <div class="wrapper">
+                        <img src="img/cure.jpeg" alt="">
+                        <div class="over-lay dsp-none-disco">
+                            <i class="fa-regular fa-circle-play text-white"></i>
+                        </div>
+                    </div>
+                    <h3>A cure for wellnwess</h3>
+                    <h5>Subtitle</h5>
+                </div>
+                <div class="disco-music">
+                    <div class="wrapper">
+                        <img src="img/sinister.jpeg" alt="">
+                        <div class="over-lay dsp-none-disco">
+                            <i class="fa-regular fa-circle-play text-white"></i>
+                        </div>
+                    </div>
+                    <h3>Sinister</h3>
+                    <h5>Subtitle</h5>
+                </div>
+            </div>
+            <h2 class="text-white ml-10">Creato per John Doe</h2>
+            <h5 class="text-white ml-10">Più ascolti, più accurati saranno i suggerimenti.</h5>
+            <div class="play-list d-flex wrap">
+                <div class="disco-music">
+                    <div class="wrapper">
+                        <img src="img/radar.jpeg" alt="">
+                        <div class="over-lay dsp-none-disco">
+                            <i class="fa-regular fa-circle-play text-white"></i>
+                        </div>
+                    </div>
+                    <h3>Release Radar</h3>
+                </div>
+                <div class="disco-music">
+                    <div class="wrapper">
+                        <img src="img/mixdaily.jpeg" alt="">
+                        <div class="over-lay dsp-none-disco">
+                            <i class="fa-regular fa-circle-play text-white"></i>
+                        </div>
+                    </div>
+                    <h3>Daily Mix</h3>
+                </div>
+            </div>
+            <h2 class="text-white ml-10">Artisti più popolari</h2>
+            <h5 class="text-white ml-10">Più ascolti, più accurati saranno i suggerimenti.</h5>
+            <div class="play-list d-flex wrap">
+                <div class="disco-music">
+                    <div class="wrapper">
+                        <img src="img/youg.jpeg" alt="">
+                        <div class="over-lay dsp-none-disco">
+                            <i class="fa-regular fa-circle-play text-white"></i>
+                        </div>
+                    </div>
+                    <h3>Young</h3>
+                    <h5>Subtitle</h5>
+                </div>
+                <div class="disco-music">
+                    <div class="wrapper">
+                        <img src="img/einaudi.jpeg" alt="">
+                        <div class="over-lay dsp-none-disco">
+                            <i class="fa-regular fa-circle-play text-white"></i>
+                        </div>
+                    </div>
+                    <h3>Einaudi</h3>
+                    <h5>Subtitle</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="d-flex">
+        <div class="footer-tools left s-aro">
+
+            <div class="left-a">
+                <img src="img/sinister.jpeg" alt="">
+                <div class="disco">
+                </div>
+                <div class="title">
+                    <p class="text-white"><strong>Sinister</strong></p>
+                    <p class="underline">Brano nome</p>
+                </div>
+            </div>
+            <div class="left-b">
+                <div><i class="fa-regular fa-heart"></i><i class="fa-regular fa-folder"></i></div>
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-tools center">
+
+            <div class="tools">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <span id="play"><i class="fa-regular fa-circle-play"></i></span>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+
+            <div class="container-flex">
+                <span>0:25</span>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill">
+                        <div class="progress-point"></div>
+                    </div>
+                </div>
+                <span>4:25</span>
+            </div>
+
+        </div>
+
+        <div class="footer-tools right"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-desktop"></i><i
+                class="fa-solid fa-volume-high"></i>
+            <div class="progress-bar">
+                <div class="progress-bar-fill">
+                    <div class="progress-point"></div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
